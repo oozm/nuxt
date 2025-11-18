@@ -48,12 +48,14 @@ function drawingTitle(drawing: BlobObject) {
             class="w-full rounded aspect-1"
             loading="lazy"
           >
+          <!-- 手机点击显示 -->
+
           <img
             v-if="drawing.customMetadata?.aiImage"
             :src="`/drawings/${drawing.customMetadata?.aiImage}`"
             :alt="`AI image generated of ${drawing.customMetadata?.description || drawing.pathname}`"
             :title="drawing.customMetadata?.description || ''"
-            class="w-full rounded aspect-1 absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-200"
+            class="w-full rounded aspect-1 absolute inset-0 opacity-0 active:opacity-100 group-hover:opacity-100 transition duration-200"
             loading="lazy"
           >
         </div>

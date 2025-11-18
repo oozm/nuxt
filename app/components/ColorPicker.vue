@@ -27,7 +27,7 @@ function setColor(hex: string) {
 
 <template>
   <UPopover
-    mode="hover"
+    mode="click"
     :ui="{ content: 'w-[156px]' }"
   >
     <template #default="{ open }">
