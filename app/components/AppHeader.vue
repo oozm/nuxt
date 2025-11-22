@@ -16,7 +16,7 @@ const isDark = computed({
 </script>
 
 <template>
-  <header class=" -mb-px sticky top-0 z-50 border-none md:pt-8 md:max-w-2xl mx-auto bg-transparent ">
+  <header class="top-0 z-50 border-none md:pt-8 md:max-w-2xl mx-auto bg-transparent ">
     <UContainer class="flex items-center justify-between gap-3 h-16 md:rounded-full  border-(--ui-border-muted) bg-(--ui-bg-muted)  ">
       <BaseButton
         to="/"
